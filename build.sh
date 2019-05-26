@@ -1,6 +1,6 @@
 
 #!/usr/bin/env bash
-version='1_0'
+version='1_0_1'
 builddir='builds'
 name=chrome-mailinator-omnibox_${version}
 

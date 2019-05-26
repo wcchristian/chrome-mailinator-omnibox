@@ -1,7 +1,7 @@
 
 {
     "name": "Chrome Mailinator Omnibox",
-    "version": "1.0",
+    "version": "1.0.1",
     "description": "Chrome Omnibox extension allows the user to open a mailinator inbox right from the address bar in chrome.",
     "background": {
       "scripts": ["./background/background.js"],

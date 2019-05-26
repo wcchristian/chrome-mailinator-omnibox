@@ -17,10 +17,11 @@ function persistMailbox(mailboxName) {
     console.log("Chrome Mailinator Omnibox: Persisting Mailbox");
     chrome.storage.sync.get('mailboxes', function(elem) {
         let mailboxes = elem.mailboxes;
+        if(!mailboxes) {
+            mailboxes = []
+        }
         if(mailboxes.indexOf(mailboxName) === -1) {
-            if(!mailboxes) {
-                mailboxes = []
-            } else if(mailboxes.length >= 20) {
+             if(mailboxes.length >= 20) {
                 mailboxes.shift()
             }
     
