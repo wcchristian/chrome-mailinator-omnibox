@@ -19,6 +19,3 @@ function buildLinkList() {
         }
     });
 }
-
-//TODO: Mask dupes
-//TODO: Allow Entry from popup page
