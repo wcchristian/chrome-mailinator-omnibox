@@ -20,7 +20,17 @@
       }
     },
     "browser_action": {
-        "default_popup": "./popup/popup.html"
+        "default_popup": "./popup/popup.html",
+        "default_icon": {
+          "16": "images/16.png",
+          "48": "images/48.png",
+          "128": "images/128.png"
+        }
     },
-    "manifest_version": 2
+    "manifest_version": 2,
+    "icons": {
+      "16": "images/16.png",
+      "48": "images/48.png",
+      "128": "images/128.png"
+    }
   }

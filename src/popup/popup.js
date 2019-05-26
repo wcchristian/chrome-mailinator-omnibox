@@ -7,7 +7,6 @@ buildLinkList();
 function buildLinkList() {
     chrome.storage.sync.get('mailboxes', function(elem) {
         if(elem.mailboxes) {
-            console.log(elem.mailboxes)
             elem.mailboxes.forEach(function(e, idx) {
                 let link = document.createElement('a')
                 link.setAttribute('href', "https://www.mailinator.com/v3/index.jsp?zone=public&query="+e);
@@ -16,6 +15,10 @@ function buildLinkList() {
                 linkContainer.appendChild(link);
                 linkContainer.appendChild(document.createElement('br'));
             })
+        } else {
+            let text = document.createElement('span');
+            text.innerHTML = 'No mailboxes accessed yet...';
+            linkContainer.appendChild(text)
         }
     });
 }
