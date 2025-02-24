@@ -1,3 +1,6 @@
+# ARCHIVED
+This project is no longer maintained. I had to pull it off of the store due to manifest v3 requirements. I may take some time to rebuild this if I get a chance.
+
 # Chrome Mailinator Omnibox
 Chrome Omnibox extension allows the user to open a mailinator inbox right from the address bar in chrome.
 
